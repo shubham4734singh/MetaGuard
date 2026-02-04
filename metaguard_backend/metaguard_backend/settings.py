@@ -82,7 +82,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'frontend', 'dist'),
+            os.path.join(BASE_DIR.parent, 'metaguard_frontend', 'build'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -133,7 +133,7 @@ USE_TZ = True
 # --------------------------------------------------
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend', 'dist', 'assets'),
+    os.path.join(BASE_DIR.parent, 'metaguard_frontend', 'build', 'assets'),
 ]
 
 
